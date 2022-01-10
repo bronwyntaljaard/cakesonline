@@ -1,0 +1,220 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px;
+  color: rgb(51, 55, 60);
+  text-align: center;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  height: 5rem;
+  padding: 0 5%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(51, 55, 60);
+}
+
+#logo a {
+  color: rgb(51, 55, 60);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-grow: 1;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 1 rem;
+  padding: 0px 15px;
+  font-size: 1.25rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(92, 103, 116);
+}
+
+nav a:hover {
+  color: rgb(51, 55, 60);
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(51, 55, 60);
+}
+
+#side-drawer {
+  background-color: rgb(51, 55, 60);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(51, 55, 60);
+}
+
+#side-drawer .menu-btn span {
+  background-color: rgb(223, 229, 235);
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(223, 229, 235);
+}
+
+main {
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 3rem;
+}
+
+section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem auto 0 auto;
+  padding: 0px;
+  width: 75%;
+}
+
+section li {
+  background-color: white;
+  color: rgb(125, 163, 206);
+  list-style: none;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+}
+
+.card-image {
+  height: 75%;
+  width: 100%;
+  background-image: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-label {
+  padding: 0px;
+  margin: 0px;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.card-label h2 {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.card-label a {
+  background-color: rgb(125, 163, 206);
+  margin: 0px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+
+.card-label a:hover {
+  background-color: rgb(100, 125, 223);
+}
+
+.bird-song {
+  background-image: url(images/brid-cake.jpeg);
+}
+
+.tower-of-flowers {
+  background-image: url(images/flowers-cake.jpeg);
+}
+
+.cactus-garden {
+  background-image: url(images/cactus-cake.jpeg);
+}
+
+.delicate-roses {
+  background-image: url(images/roses-cake.jpeg);
+}
+
+@media (max-width: 48rem) {
+  .main-menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  section ul {
+    grid-template-columns: 100%;
+  }
+}
